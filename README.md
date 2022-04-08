@@ -4,7 +4,7 @@
 
 - 配置project.config.json  指定云开发本地目录路径
 
-![imag-20220408153458021](C:\Users\Stern\AppData\Roaming\Typora\typora-user-images\image-20220408153458021.png)
+![imag-20220408153458021](E:/WebstormProjects/food-master/program/README_files\image-20220408153458021.png)
 
 ```json
  "cloudfunctionRoot": "./cloud/",
@@ -12,7 +12,7 @@
 
 - 初始化云开发本地环境 app.js
 
-![image-20220408153625893](C:\Users\Stern\AppData\Roaming\Typora\typora-user-images\image-20220408153625893.png)
+![image-20220408153625893](E:/WebstormProjects/food-master/program/README_files\image-20220408153625893.png)
 
 ```js
 //app.js
