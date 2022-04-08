@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/food/food",
+    "pages/myOrder/myOrder",
+    "pages/me/me",
+    "pages/address/address"
+
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffbc0d",
+    "navigationBarTitleText": "点餐小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#ffbc0d",
+    "borderStyle": "white",
+
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/food.png",
+        "selectedIconPath": "images/food-1.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-1.png"
+      }
+    ]
+
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "导航需要"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+
+}

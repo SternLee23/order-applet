@@ -1,0 +1,7 @@
+
+/* app.wxss */
+/* 定义价格字符 */
+.price::before{
+  content: '¥';
+  color: #f40;
+}

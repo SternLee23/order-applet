@@ -1,0 +1,62 @@
+<!--pages/food/food.wxml-->
+
+<!-- 搜索区域 -->
+<view class="search_root">
+  <input bindconfirm="goSearch" confirm-type="go" bindinput="getInput" placeholder="搜索菜品" class="search_input"
+    type="text" />
+  <image bindtap="goSearch" class="search_icon" src="../../images/search-1.png" />
+</view>
+
+<!-- 内容区域 -->
+<view class="tools">
+  <view class="content">
+    <view class="content_item" wx:key="*this" wx:for="{{foodList}}">
+      <image class="item_right" src="{{item.icon}}"></image>
+      <view class="item_left">
+        <view class="item_name">{{item.name}}</view>
+        <view class="item_button">
+          <view class="price item_price"> {{item.price}}</view>
+          <image bindtap="jian" data-id="{{item._id}}" class="jiajian" src="../../images/jian.png"></image>
+          <text>{{item.num}}</text>
+          <image bindtap="jia" data-id="{{item._id}}" class="jiajian" src="../../images/jia.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 底部区域 -->
+<view class="bottom_all">
+  <view bindtap="openMask" class="left_cart">
+    <image src="../../images/cart.png"></image>
+  </view>
+  <view class="total_money">总计{{totalMoney}}元，{{totalNum}}件</view>
+  <view class="choose_ok" bindtap="takeOrder">选好了</view>
+</view>
+
+<!-- 购物车蒙层 -->
+<view hidden="{{isHiddMask}}" class="mask_bg"></view>
+<!-- 购物车列表 -->
+<view hidden="{{isHiddMask}}" class="cart_content">
+  <view class="cart_content_top">
+    <view bindtap="closeMask">返回</view>
+    <view class="top_title">购物车</view>
+    <view bindtap="clearCart">清空购物车</view>
+  </view>
+
+  <scroll-view class="cart_content_list">
+    <view wx:for="{{cartList}}" wx:key="*this">
+      <view class="cart_item">
+        <view class="cart_item_left">
+          <view>{{item.name}}</view>
+          <view class="cart_item_price">{{item.price}}元</view>
+        </view>
+        <view class="cart_item_right">
+          <image bindtap="jian" data-id="{{item._id}}" class="jiajian" src="../../images/jian.png"></image>
+          <text>{{item.num}}</text>
+          <image bindtap="jia" data-id="{{item._id}}" class="jiajian" src="../../images/jia.png"></image>
+          <image bindtap="closeCartItem" data-index="{{index}}" class="close_cart" src="../../images/close.png"></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

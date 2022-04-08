@@ -1,0 +1,53 @@
+<!-- 轮播图区域 -->
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" circular="true" duration="{{true}}"
+  indicator-active-color="#ffbc0d">
+  <swiper-item wx:for="{{swiper}}" wx:key="*this">
+    <image mode="widthFix" src="{{item.img}}"></image>
+  </swiper-item>
+</swiper>
+
+<!-- 搜索区域 -->
+<view class="search_root">
+  <input bindconfirm="goSearch" confirm-type="search" bindinput="getInput" placeholder="搜索菜品" class="search_input"
+    type="text" />
+  <image bindtap="goSearch" class="search_icon" src="../../images/search-1.png" />
+</view>
+
+<!-- 九宫格区域 -->
+<view class="cotainer">
+
+  <view bindtap="scanCodeEvent" class="item">
+    <image class="item_img" src="../../images/home/diancan.png" />
+    <text class="item_text">扫码点餐</text>
+  </view>
+  <view bindtap="click2" class="item">
+    <image class="item_img" src="../../images/home/menu.png" />
+    <text class="item_text">浏览菜单</text>
+  </view>
+  <view bindtap="click4" class="item">
+    <image class="item_img" src="../../images/home/info.png" />
+    <text class="item_text">关于我们</text>
+  </view>
+</view>
+
+<!-- 热门推荐 -->
+<view>
+  <!-- 标题区域 -->
+  <view>
+    <view class="hot_tip">
+      <text class="hot_tip_title">热门推荐</text>
+      <text bindtap="click2">更多></text>
+    </view>
+  </view>
+
+  <!-- 内容区域 -->
+  <view class="content">
+    <view bindtap="click2" class="content_item" wx:key="*this" wx:for="{{foodList}}">
+      <image class="item_right" src="{{item.icon}}"></image>
+      <view class="item_left">
+        <view class="item_name">{{item.name}}</view>
+        <view class="price item_price"> {{item.price}}</view>
+      </view>
+    </view>
+  </view>
+</view>

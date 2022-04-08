@@ -1,0 +1,17 @@
+<!--pages/address/address.wxml-->
+
+<!-- 25.51693,103.79632 -->
+<!-- 显示地图 -->
+
+<map bindmarkertap="clickMap" data-marker="{{markers[0]}}" class="map" longitude="{{markers[0].longitude}}"
+  latitude="{{markers[0].latitude}}" scale="17" show-location="" markers="{{markers}}" name="{{markers[0].name}}"></map>
+
+<!--  bindmarkertap="clickMap" 绑定地图点击事件 -->
+<!-- data-marker="{{markers[0]}}"  传值给点击事件 -->
+
+<!-- 地址-拨打电话 -->
+<view class="address">
+  <view>地址：{{address}}</view>
+  <view data-phone="{{phone}}" bindtap="callPhone">电话：{{phone}}（可点击拨打）</view>
+  <view data-weixin="{{weixin}}" bindtap="copyWechat">微信：{{weixin}}（可点击复制）</view>
+</view>

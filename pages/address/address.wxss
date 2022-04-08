@@ -1,0 +1,17 @@
+/* pages/address/address.wxss */
+
+.map {
+  height: 80vh;
+  width: 100%;
+}
+
+.address {
+  padding: 0 20rpx;
+  color: rgb(71, 70, 70);
+  font-size: 35rpx;
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  justify-content: flex-end;
+  line-height: 1.75;
+}
