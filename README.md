@@ -5,7 +5,7 @@
 
 - 配置project.config.json  指定云开发本地目录路径
 
-![imag-20220408153458021](README_files\image-20220408153458021.png)
+![imag-20220408153458021](/README_files/image-20220408153458021.png)
 
 ```json
  "cloudfunctionRoot": "./cloud/",
