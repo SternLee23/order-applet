@@ -5,7 +5,7 @@
 
 - 配置project.config.json  指定云开发本地目录路径
 
-![imag-20220408153458021](https://gitee.com/stern23/ordering-applet/tree/dev/README_files\image-20220408153458021.png)
+![imag-20220408153458021](README_files\image-20220408153458021.png)
 
 ```json
  "cloudfunctionRoot": "./cloud/",
@@ -13,7 +13,7 @@
 
 - 初始化云开发本地环境 app.js
 
-![image-20220408153625893](https://gitee.com/stern23/ordering-applet/tree/dev/README_files\image-20220408153625893.png)
+![image-20220408153625893](README_files\image-20220408153625893.png)
 
 ```js
 //app.js
@@ -28,7 +28,7 @@ App({
 
 - 保存之后，cloud目录变成云朵形状
 
-![image-20210706235507872](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210706235507872.png)
+![image-20210706235507872](README_files/image-20210706235507872.png)
 
 # 3.首页开发home页面
 
@@ -41,7 +41,7 @@ App({
 
 - 用到小程序组件swiper
 
-![image-20210706230542227](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210706230542227.png)
+![image-20210706230542227](README_files/image-20210706230542227.png)
 
 ```html
 <swiper indicator-dots="{{true}}" autoplay="{{false}}" interval="{{false}}" duration="{{true}}"
@@ -56,21 +56,21 @@ App({
 
   - 利用云开发cms管理系统创建轮播图数据表，并上传轮播图图片
 
-  ![image-20210706235714680](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210706235714680.png)
+  ![image-20210706235714680](README_files/image-20210706235714680.png)
 
   ![image-20210706235729551](C:/Users/Administrator/Desktop/image-20210706235729551.png)
 
   - 创建轮播图模型（该模型就是云控制台数据库中的集合）
 
-  ![image-20210707000035130](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707000035130.png)
+  ![image-20210707000035130](README_files/image-20210707000035130.png)
 
-  ![image-20210707000253291](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707000253291.png)
+  ![image-20210707000253291](README_files/image-20210707000253291.png)
 
-  ![image-20210707000635306](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707000635306.png)
+  ![image-20210707000635306](README_files/image-20210707000635306.png)
 
   - 上传图片到轮播图集合中
 
-  ![image-20210707001115097](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707001115097.png)
+  ![image-20210707001115097](README_files/image-20210707001115097.png)
 
   - 在home.js中创建数据库查询语句
 
@@ -92,9 +92,9 @@ App({
 
   注意：要开启数据库所有用户可读权限
 
-  ![image-20210707001806768](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707001806768.png)
+  ![image-20210707001806768](README_files/image-20210707001806768.png)
 
-  ![image-20210707001948731](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707001948731.png)
+  ![image-20210707001948731](README_files/image-20210707001948731.png)
 
   - 把获取到的图片路径赋值给data，并渲染到页面
 
@@ -128,11 +128,11 @@ App({
   </swiper>
   ```
 
-  ![image-20210707002432212](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707002432212.png)
+  ![image-20210707002432212](README_files/image-20210707002432212.png)
 
   - [ ] 注意，当前轮播图是动态请求过来的数据，如果断网状态将显示空界面
   - [ ] 为了界面友好，需要再配置本地轮播图图片
-  - [ ] ![image-20210707003217386](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707003217386.png)
+  - [ ] ![image-20210707003217386](README_files/image-20210707003217386.png)
   - [ ] 
 
 ```js
@@ -391,13 +391,13 @@ Page({
 
 ### 4.实现手机界面点击搜索触发搜索事件
 
-![image-20210707030727358](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707030727358.png)
+![image-20210707030727358](README_files/image-20210707030727358.png)
 
-![image-20210707031112128](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707031112128.png)
+![image-20210707031112128](README_files/image-20210707031112128.png)
 
-![image-20210707031143634](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707031143634.png)
+![image-20210707031143634](README_files/image-20210707031143634.png)
 
-![image-20210707031617885](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707031617885.png)
+![image-20210707031617885](README_files/image-20210707031617885.png)
 
 ```html
 <!-- 轮播图区域 -->
@@ -506,7 +506,7 @@ Page({
 
 ## 3.首页9宫格布局部分
 
-![image-20210707045605386](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707045605386.png)
+![image-20210707045605386](README_files/image-20210707045605386.png)
 
 ### 1.去图标库下载图标保存至本地images/home文件夹
 
@@ -629,19 +629,19 @@ Page({
 
 #### 1.创建数据表
 
-![image-20210707051915955](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707051915955.png)
+![image-20210707051915955](README_files/image-20210707051915955.png)
 
-![image-20210707051958251](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707051958251.png)
+![image-20210707051958251](README_files/image-20210707051958251.png)
 
-![image-20210707052018171](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707052018171.png)
+![image-20210707052018171](README_files/image-20210707052018171.png)
 
 
 
 - [ ] 优化代码-把获取轮播图代码抽离出来定义成方法
 
-![image-20210707054319986](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707054319986.png)
+![image-20210707054319986](README_files/image-20210707054319986.png)
 
-![image-20210707054717969](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707054717969.png)
+![image-20210707054717969](README_files/image-20210707054717969.png)
 
 #### 2.页面加载时调用数据,定义单独的调用方法
 
@@ -667,13 +667,13 @@ Page({
 
 #### 3.新建云函数，通过云函数调用数据库数据
 
-![image-20210707055100277](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707055100277.png)
+![image-20210707055100277](README_files/image-20210707055100277.png)
 
 - 初始化云环境，用常量
 
   [参考文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-sdk-api/constant/constant.html)
 
-![image-20210707055335092](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707055335092.png)
+![image-20210707055335092](README_files/image-20210707055335092.png)
 
 ```js
 //云函数getFoodList
@@ -754,7 +754,7 @@ exports.main = async (event, context) => {
 
 - 在data中定义foodList数组变量接收
 
-![image-20210707061742398](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707061742398.png)
+![image-20210707061742398](README_files/image-20210707061742398.png)
 
 - ```js
   //  2. 通过云函数查询数据库
@@ -775,11 +775,11 @@ exports.main = async (event, context) => {
   }
   ```
 
-  ![image-20210707062030584](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707062030584.png)
+  ![image-20210707062030584](README_files/image-20210707062030584.png)
 
 - 写热门推荐菜品列表样式页面
 
-![image-20210707211934875](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707211934875.png)
+![image-20210707211934875](README_files/image-20210707211934875.png)
 
 ```html
   <!-- 内容区域 -->
@@ -850,15 +850,15 @@ exports.main = async (event, context) => {
 
 ### 1.点击关于我们按钮跳转地址页面
 
-![image-20210707232219781](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707232219781.png)
+![image-20210707232219781](README_files/image-20210707232219781.png)
 
 ### 2.创建address页面布局样式
 
-![image-20210707213404572](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707213404572.png)
+![image-20210707213404572](README_files/image-20210707213404572.png)
 
 ### 3.地址经纬度查询+导航功能[腾讯位置服务](https://lbs.qq.com/getPoint)
 
-![image-20210707214156420](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707214156420.png)
+![image-20210707214156420](README_files/image-20210707214156420.png)
 
 ```html
 <!--pages/address/address.wxml-->
@@ -941,7 +941,7 @@ Page({
 
 ### 4.关于我们页面底部地址电话
 
-![image-20210708013829708](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708013829708.png)
+![image-20210708013829708](README_files/image-20210708013829708.png)
 
 ```html
 <!-- 地址-拨打电话 -->
@@ -1107,11 +1107,11 @@ Page({
 
 ## 1.授权获取用户信息
 
-![image-20210708071331485](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708071331485.png)
+![image-20210708071331485](README_files/image-20210708071331485.png)
 
-![image-20210708071345313](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708071345313.png)
+![image-20210708071345313](README_files/image-20210708071345313.png)
 
-![image-20210708071358056](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708071358056.png)
+![image-20210708071358056](README_files/image-20210708071358056.png)
 
 ```html
 <!--pages/me/me.wxml-->
@@ -1193,23 +1193,23 @@ Page({
 
 ```
 
-![image-20210708073639151](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708073639151.png)
+![image-20210708073639151](README_files/image-20210708073639151.png)
 
 ## 3.缓存
 
 ### 1.授权成功后把用户数据存入缓存
 
-![image-20210708072541226](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708072541226.png)
+![image-20210708072541226](README_files/image-20210708072541226.png)
 
 ### 2.加载页面之后把用户数据从缓存取出渲染到页面
 
-![image-20210708073335593](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708073335593.png)
+![image-20210708073335593](README_files/image-20210708073335593.png)
 
 # 5.个人中心页面
 
 ## 1.个人中心条目布局
 
-![image-20210708165950467](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708165950467.png)
+![image-20210708165950467](README_files/image-20210708165950467.png)
 
 ```html
 <!--pages/me/me.wxml-->
@@ -1322,7 +1322,7 @@ Page({
 
 ## 2.设置个人信息登录可见
 
-![image-20210708170818943](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708170818943.png)
+![image-20210708170818943](README_files/image-20210708170818943.png)
 
 ```css
 <!-- 条目布局 -->
@@ -1347,13 +1347,13 @@ Page({
 
 ## 3.在线客服和意见反馈功能实现
 
-![image-20210708171038228](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708171038228.png)
+![image-20210708171038228](README_files/image-20210708171038228.png)
 
 - 用小程序button组件实现
 
-![image-20210708171337723](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708171337723.png)
+![image-20210708171337723](README_files/image-20210708171337723.png)
 
-![image-20210708171356907](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708171356907.png)
+![image-20210708171356907](README_files/image-20210708171356907.png)
 
 - 修改button样式-消除button默认样式
 
@@ -1379,27 +1379,27 @@ Page({
 }
 ```
 
-![image-20210708172411900](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708172411900.png)
+![image-20210708172411900](README_files/image-20210708172411900.png)
 
 - [x] 注意：消除不了的话得把app.json里面的"style":"v2"删除
 
-![image-20210708172713165](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708172713165.png)
+![image-20210708172713165](README_files/image-20210708172713165.png)
 
 # 6.搜索页面的开发
 
 ## 1.搜索页面顶部搜索框与首页一样，直接复制首页html，css到搜索列表页面
 
-![image-20210708180721316](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708180721316.png)
+![image-20210708180721316](README_files/image-20210708180721316.png)
 
-![image-20210708180828583](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708180828583.png)
+![image-20210708180828583](README_files/image-20210708180828583.png)
 
 ## 2.搜索页面列表部分与首页热门推荐一样，直接复制首页html，css到搜索列表页面
 
-![image-20210707211934875](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707211934875.png)
+![image-20210707211934875](README_files/image-20210707211934875.png)
 
 ## 2.添加搜索框功能-与首页一致
 
-![image-20210708195331265](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708195331265.png)
+![image-20210708195331265](README_files/image-20210708195331265.png)
 
 ```html
 <!--pages/food/food.wxml-->
@@ -1493,7 +1493,7 @@ Page({
 
 ## 2.添加搜索列表页面菜品加减功能
 
-![image-20210708234545154](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708234545154.png)
+![image-20210708234545154](README_files/image-20210708234545154.png)
 
 ```html
 <!--pages/food/food.wxml-->
@@ -1721,15 +1721,15 @@ Page({
 - 注意事项：
 - 渲染首页搜索结果数据到页面时就要循环数组每一项，给foodList每一项多加一个属性num，用于后面购物车功能使用
 
-![image-20210708235026970](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708235026970.png)
+![image-20210708235026970](README_files/image-20210708235026970.png)
 
-![image-20210708235118719](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708235118719.png)
+![image-20210708235118719](README_files/image-20210708235118719.png)
 
 # 7.实现首页浏览菜品按钮跳转到菜品列表页
 
-![image-20210709004822353](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709004822353.png)
+![image-20210709004822353](README_files/image-20210709004822353.png)
 
-![image-20210709004557500](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709004557500.png)
+![image-20210709004557500](README_files/image-20210709004557500.png)
 
 ```js
 // pages/food/food.js
@@ -1859,7 +1859,7 @@ Page({
 
 ## 1.购物车区域基本布局
 
-![image-20210709015102983](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709015102983.png)
+![image-20210709015102983](README_files/image-20210709015102983.png)
 
 ```xml
 <!--pages/food/food.wxml-->
@@ -2038,7 +2038,7 @@ page {
 
 ## 2.购物车功能实现
 
-![image-20210709020511111](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709020511111.png)
+![image-20210709020511111](README_files/image-20210709020511111.png)
 
 ```js
   // 加操作
@@ -2094,7 +2094,7 @@ page {
 
 ## 3.把购物车数据追加到数组
 
-![image-20210709034917832](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709034917832.png)
+![image-20210709034917832](README_files/image-20210709034917832.png)
 
 ```js
 // pages/food/food.js
@@ -2271,21 +2271,21 @@ Page({
 
 ## 4.把购物车数据缓存到本地存储
 
-![image-20210709043117008](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709043117008.png)
+![image-20210709043117008](README_files/image-20210709043117008.png)
 
-![image-20210709043155175](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709043155175.png)
+![image-20210709043155175](README_files/image-20210709043155175.png)
 
-![image-20210709043237493](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709043237493.png)
+![image-20210709043237493](README_files/image-20210709043237493.png)
 
 ## 5.实现购物车蒙层
 
 
 
-![image-20210709043031212](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709043031212.png)
+![image-20210709043031212](README_files/image-20210709043031212.png)
 
 ## 6.购物车整体页面加功能代码
 
-![image-20210709224538224](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709224538224.png)
+![image-20210709224538224](README_files/image-20210709224538224.png)
 
 - [ ] 此处主要用到数组的遍历查询方法和删除单条数据方法
 
@@ -2848,7 +2848,7 @@ App({
 
 - 保存之后，cloud目录变成云朵形状
 
-![image-20210706235507872](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210706235507872.png)
+![image-20210706235507872](README_files/image-20210706235507872.png)
 
 # 3.首页开发home页面
 
@@ -2861,7 +2861,7 @@ App({
 
 - 用到小程序组件swiper
 
-![image-20210706230542227](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210706230542227.png)
+![image-20210706230542227](README_files/image-20210706230542227.png)
 
 ```html
 <swiper indicator-dots="{{true}}" autoplay="{{false}}" interval="{{false}}" duration="{{true}}"
@@ -2876,21 +2876,21 @@ App({
 
   - 利用云开发cms管理系统创建轮播图数据表，并上传轮播图图片
 
-  ![image-20210706235714680](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210706235714680.png)
+  ![image-20210706235714680](README_files/image-20210706235714680.png)
 
   ![image-20210706235729551](C:/Users/Administrator/Desktop/image-20210706235729551.png)
 
   - 创建轮播图模型（该模型就是云控制台数据库中的集合）
 
-  ![image-20210707000035130](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707000035130.png)
+  ![image-20210707000035130](README_files/image-20210707000035130.png)
 
-  ![image-20210707000253291](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707000253291.png)
+  ![image-20210707000253291](README_files/image-20210707000253291.png)
 
-  ![image-20210707000635306](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707000635306.png)
+  ![image-20210707000635306](README_files/image-20210707000635306.png)
 
   - 上传图片到轮播图集合中
 
-  ![image-20210707001115097](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707001115097.png)
+  ![image-20210707001115097](README_files/image-20210707001115097.png)
 
   - 在home.js中创建数据库查询语句
 
@@ -2912,9 +2912,9 @@ App({
 
   注意：要开启数据库所有用户可读权限
 
-  ![image-20210707001806768](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707001806768.png)
+  ![image-20210707001806768](README_files/image-20210707001806768.png)
 
-  ![image-20210707001948731](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707001948731.png)
+  ![image-20210707001948731](README_files/image-20210707001948731.png)
 
   - 把获取到的图片路径赋值给data，并渲染到页面
 
@@ -2948,11 +2948,11 @@ App({
   </swiper>
   ```
 
-  ![image-20210707002432212](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707002432212.png)
+  ![image-20210707002432212](README_files/image-20210707002432212.png)
 
   - [ ] 注意，当前轮播图是动态请求过来的数据，如果断网状态将显示空界面
   - [ ] 为了界面友好，需要再配置本地轮播图图片
-  - [ ] ![image-20210707003217386](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707003217386.png)
+  - [ ] ![image-20210707003217386](README_files/image-20210707003217386.png)
   - [ ] 
 
 ```js
@@ -3211,13 +3211,13 @@ Page({
 
 ### 4.实现手机界面点击搜索触发搜索事件
 
-![image-20210707030727358](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707030727358.png)
+![image-20210707030727358](README_files/image-20210707030727358.png)
 
-![image-20210707031112128](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707031112128.png)
+![image-20210707031112128](README_files/image-20210707031112128.png)
 
-![image-20210707031143634](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707031143634.png)
+![image-20210707031143634](README_files/image-20210707031143634.png)
 
-![image-20210707031617885](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707031617885.png)
+![image-20210707031617885](README_files/image-20210707031617885.png)
 
 ```html
 <!-- 轮播图区域 -->
@@ -3326,7 +3326,7 @@ Page({
 
 ## 3.首页9宫格布局部分
 
-![image-20210707045605386](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707045605386.png)
+![image-20210707045605386](README_files/image-20210707045605386.png)
 
 ### 1.去图标库下载图标保存至本地images/home文件夹
 
@@ -3449,19 +3449,19 @@ Page({
 
 #### 1.创建数据表
 
-![image-20210707051915955](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707051915955.png)
+![image-20210707051915955](README_files/image-20210707051915955.png)
 
-![image-20210707051958251](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707051958251.png)
+![image-20210707051958251](README_files/image-20210707051958251.png)
 
-![image-20210707052018171](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707052018171.png)
+![image-20210707052018171](README_files/image-20210707052018171.png)
 
 
 
 - [ ] 优化代码-把获取轮播图代码抽离出来定义成方法
 
-![image-20210707054319986](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707054319986.png)
+![image-20210707054319986](README_files/image-20210707054319986.png)
 
-![image-20210707054717969](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707054717969.png)
+![image-20210707054717969](README_files/image-20210707054717969.png)
 
 #### 2.页面加载时调用数据,定义单独的调用方法
 
@@ -3487,13 +3487,13 @@ Page({
 
 #### 3.新建云函数，通过云函数调用数据库数据
 
-![image-20210707055100277](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707055100277.png)
+![image-20210707055100277](README_files/image-20210707055100277.png)
 
 - 初始化云环境，用常量
 
   [参考文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-sdk-api/constant/constant.html)
 
-![image-20210707055335092](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707055335092.png)
+![image-20210707055335092](README_files/image-20210707055335092.png)
 
 ```js
 //云函数getFoodList
@@ -3574,7 +3574,7 @@ exports.main = async (event, context) => {
 
 - 在data中定义foodList数组变量接收
 
-![image-20210707061742398](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707061742398.png)
+![image-20210707061742398](README_files/image-20210707061742398.png)
 
 - ```js
   //  2. 通过云函数查询数据库
@@ -3595,11 +3595,11 @@ exports.main = async (event, context) => {
   }
   ```
 
-  ![image-20210707062030584](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707062030584.png)
+  ![image-20210707062030584](README_files/image-20210707062030584.png)
 
 - 写热门推荐菜品列表样式页面
 
-![image-20210707211934875](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707211934875.png)
+![image-20210707211934875](README_files/image-20210707211934875.png)
 
 ```html
   <!-- 内容区域 -->
@@ -3670,15 +3670,15 @@ exports.main = async (event, context) => {
 
 ### 1.点击关于我们按钮跳转地址页面
 
-![image-20210707232219781](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707232219781.png)
+![image-20210707232219781](README_files/image-20210707232219781.png)
 
 ### 2.创建address页面布局样式
 
-![image-20210707213404572](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707213404572.png)
+![image-20210707213404572](README_files/image-20210707213404572.png)
 
 ### 3.地址经纬度查询+导航功能[腾讯位置服务](https://lbs.qq.com/getPoint)
 
-![image-20210707214156420](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707214156420.png)
+![image-20210707214156420](README_files/image-20210707214156420.png)
 
 ```html
 <!--pages/address/address.wxml-->
@@ -3761,7 +3761,7 @@ Page({
 
 ### 4.关于我们页面底部地址电话
 
-![image-20210708013829708](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708013829708.png)
+![image-20210708013829708](README_files/image-20210708013829708.png)
 
 ```html
 <!-- 地址-拨打电话 -->
@@ -3927,11 +3927,11 @@ Page({
 
 ## 1.授权获取用户信息
 
-![image-20210708071331485](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708071331485.png)
+![image-20210708071331485](README_files/image-20210708071331485.png)
 
-![image-20210708071345313](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708071345313.png)
+![image-20210708071345313](README_files/image-20210708071345313.png)
 
-![image-20210708071358056](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708071358056.png)
+![image-20210708071358056](README_files/image-20210708071358056.png)
 
 ```html
 <!--pages/me/me.wxml-->
@@ -4013,23 +4013,23 @@ Page({
 
 ```
 
-![image-20210708073639151](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708073639151.png)
+![image-20210708073639151](README_files/image-20210708073639151.png)
 
 ## 3.缓存
 
 ### 1.授权成功后把用户数据存入缓存
 
-![image-20210708072541226](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708072541226.png)
+![image-20210708072541226](README_files/image-20210708072541226.png)
 
 ### 2.加载页面之后把用户数据从缓存取出渲染到页面
 
-![image-20210708073335593](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708073335593.png)
+![image-20210708073335593](README_files/image-20210708073335593.png)
 
 # 5.个人中心页面
 
 ## 1.个人中心条目布局
 
-![image-20210708165950467](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708165950467.png)
+![image-20210708165950467](README_files/image-20210708165950467.png)
 
 ```html
 <!--pages/me/me.wxml-->
@@ -4142,7 +4142,7 @@ Page({
 
 ## 2.设置个人信息登录可见
 
-![image-20210708170818943](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708170818943.png)
+![image-20210708170818943](README_files/image-20210708170818943.png)
 
 ```css
 <!-- 条目布局 -->
@@ -4167,13 +4167,13 @@ Page({
 
 ## 3.在线客服和意见反馈功能实现
 
-![image-20210708171038228](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708171038228.png)
+![image-20210708171038228](README_files/image-20210708171038228.png)
 
 - 用小程序button组件实现
 
-![image-20210708171337723](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708171337723.png)
+![image-20210708171337723](README_files/image-20210708171337723.png)
 
-![image-20210708171356907](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708171356907.png)
+![image-20210708171356907](README_files/image-20210708171356907.png)
 
 - 修改button样式-消除button默认样式
 
@@ -4199,27 +4199,27 @@ Page({
 }
 ```
 
-![image-20210708172411900](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708172411900.png)
+![image-20210708172411900](README_files/image-20210708172411900.png)
 
 - [x] 注意：消除不了的话得把app.json里面的"style":"v2"删除
 
-![image-20210708172713165](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708172713165.png)
+![image-20210708172713165](README_files/image-20210708172713165.png)
 
 # 6.搜索页面的开发
 
 ## 1.搜索页面顶部搜索框与首页一样，直接复制首页html，css到搜索列表页面
 
-![image-20210708180721316](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708180721316.png)
+![image-20210708180721316](README_files/image-20210708180721316.png)
 
-![image-20210708180828583](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708180828583.png)
+![image-20210708180828583](README_files/image-20210708180828583.png)
 
 ## 2.搜索页面列表部分与首页热门推荐一样，直接复制首页html，css到搜索列表页面
 
-![image-20210707211934875](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210707211934875.png)
+![image-20210707211934875](README_files/image-20210707211934875.png)
 
 ## 2.添加搜索框功能-与首页一致
 
-![image-20210708195331265](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708195331265.png)
+![image-20210708195331265](README_files/image-20210708195331265.png)
 
 ```html
 <!--pages/food/food.wxml-->
@@ -4313,7 +4313,7 @@ Page({
 
 ## 2.添加搜索列表页面菜品加减功能
 
-![image-20210708234545154](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708234545154.png)
+![image-20210708234545154](README_files/image-20210708234545154.png)
 
 ```html
 <!--pages/food/food.wxml-->
@@ -4541,15 +4541,15 @@ Page({
 - 注意事项：
 - 渲染首页搜索结果数据到页面时就要循环数组每一项，给foodList每一项多加一个属性num，用于后面购物车功能使用
 
-![image-20210708235026970](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708235026970.png)
+![image-20210708235026970](README_files/image-20210708235026970.png)
 
-![image-20210708235118719](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210708235118719.png)
+![image-20210708235118719](README_files/image-20210708235118719.png)
 
 # 7.实现首页浏览菜品按钮跳转到菜品列表页
 
-![image-20210709004822353](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709004822353.png)
+![image-20210709004822353](README_files/image-20210709004822353.png)
 
-![image-20210709004557500](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709004557500.png)
+![image-20210709004557500](README_files/image-20210709004557500.png)
 
 ```js
 // pages/food/food.js
@@ -4679,7 +4679,7 @@ Page({
 
 ## 1.购物车区域基本布局
 
-![image-20210709015102983](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709015102983.png)
+![image-20210709015102983](README_files/image-20210709015102983.png)
 
 ```xml
 <!--pages/food/food.wxml-->
@@ -4858,7 +4858,7 @@ page {
 
 ## 2.购物车功能实现
 
-![image-20210709020511111](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709020511111.png)
+![image-20210709020511111](README_files/image-20210709020511111.png)
 
 ```js
   // 加操作
@@ -4914,7 +4914,7 @@ page {
 
 ## 3.把购物车数据追加到数组
 
-![image-20210709034917832](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709034917832.png)
+![image-20210709034917832](README_files/image-20210709034917832.png)
 
 ```js
 // pages/food/food.js
@@ -5091,21 +5091,21 @@ Page({
 
 ## 4.把购物车数据缓存到本地存储
 
-![image-20210709043117008](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709043117008.png)
+![image-20210709043117008](README_files/image-20210709043117008.png)
 
-![image-20210709043155175](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709043155175.png)
+![image-20210709043155175](README_files/image-20210709043155175.png)
 
-![image-20210709043237493](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709043237493.png)
+![image-20210709043237493](README_files/image-20210709043237493.png)
 
 ## 5.实现购物车蒙层
 
 
 
-![image-20210709043031212](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709043031212.png)
+![image-20210709043031212](README_files/image-20210709043031212.png)
 
 ## 6.购物车整体页面加功能代码
 
-![image-20210709224538224](https://gitee.com/stern23/ordering-applet/tree/dev/README_files/image-20210709224538224.png)
+![image-20210709224538224](README_files/image-20210709224538224.png)
 
 - [ ] 此处主要用到数组的遍历查询方法和删除单条数据方法
 
