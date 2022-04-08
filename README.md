@@ -13,7 +13,7 @@
 
 - 初始化云开发本地环境 app.js
 
-![image-20220408153625893](README_files\image-20220408153625893.png)
+![image-20220408153625893](/README_files/image-20220408153625893.png)
 
 ```js
 //app.js
