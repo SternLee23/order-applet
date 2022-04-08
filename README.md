@@ -58,7 +58,7 @@ App({
 
   ![image-20210706235714680](README_files/image-20210706235714680.png)
 
-  ![image-20210706235729551](C:/Users/Administrator/Desktop/image-20210706235729551.png)
+  ![image-20210706235729551](README_files/image-20210706235729551.png)
 
   - 创建轮播图模型（该模型就是云控制台数据库中的集合）
 
